@@ -46,9 +46,13 @@ public class Main {
            return;
        }
 
+       //comの手を生成
+       com.createRandomHand();
+
        //テストコード
-       System.out.println("テスト結果");
-       System.out.println(user.getHand().getHandName());
+       System.out.println("ランダムなジャンケンの手をCPUにセットする");
+       System.out.println(com.getHand().getHandName());
+
    }
 
 }
