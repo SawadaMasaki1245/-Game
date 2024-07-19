@@ -7,9 +7,14 @@ public class Pa implements Hand{
      　　　　0 : 自身が引数で指定した手と同じ
      　　　　1 : 自身が引数で指定した手より強い
      */
-    public int compare(Hand hand) {
-        //TODO:例外の処理
-        return 0; //TODO 仮の返り値
+    public int compare(Hand hand){
+        if(hand instanceof Gu) {
+            return 1;
+        } else if(hand instanceof Choki) {
+            return -1;
+        } else {
+            return 0;
+        }
     }
         public String getHandName() {
             return this.HAND_NAME;

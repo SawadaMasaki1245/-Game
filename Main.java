@@ -48,7 +48,7 @@ public class Main {
 
        //comの手を生成
        com.createRandomHand();
-
+15
        //テストコード
        System.out.println("ランダムなジャンケンの手をCPUにセットする");
        System.out.println(com.getHand().getHandName());
